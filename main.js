@@ -1,10 +1,14 @@
+import { header } from "./components/header/headerComponent.js";
+
 function seccion(){
 
     let seccion = document.createElement('section');
 
+    seccion.appendChild(header());
+    
     let h1 = document.createElement('h1');
     h1.className = "titulo";
-    h1.innerText = "Jorge Gómez";
+    h1.innerText = "Alexander";
     seccion.appendChild(h1);
 
     let p = document.createElement('p')
