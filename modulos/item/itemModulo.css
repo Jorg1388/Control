@@ -1,5 +1,18 @@
 .item {
     width: 20rem;
-    height: 20rem;
-    background-color: red;
+    height: 22rem;
+    background-color: #11ff00;
+    border: 1px solid black;
 }
+
+.titulo-1 {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-1 {
+    width: 100%;
+}
+
