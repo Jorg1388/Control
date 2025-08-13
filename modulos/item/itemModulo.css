@@ -1,18 +1,17 @@
-.item {
+.item{
     width: 20rem;
-    height: 22rem;
-    background-color: #11ff00;
-    border: 1px solid black;
+    height: 20rem;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px 5px;
 }
-
-.titulo-1 {
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-1 {
+.item Img{
     width: 100%;
 }
+
+.verde{
+    background-color: green;
+}
+
+
 
