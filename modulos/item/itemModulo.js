@@ -1,3 +1,5 @@
+import { listaDeCompras } from "../../database/carrito.js";
+
 export function item(titulo,urlImg,description,price){
 
     let item = document.createElement('div');
@@ -20,9 +22,9 @@ export function item(titulo,urlImg,description,price){
     item.appendChild(span);
 
     item.addEventListener('click', ()=>{
-            item.classList.add("verde");
-            let header = document.querySelector('.header');
-            header.classList.add("ocultar");
+        listaDeCompras.push("Comal");
+        console.log(listaDeCompras.length);
+        console.log(listaDeCompras);
     });
 
     return item;

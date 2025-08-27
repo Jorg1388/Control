@@ -1,6 +1,6 @@
 export function nav() {
     
-    let nav = document.createElement('div');
+    let nav = document.createElement('nav');
     nav.className = "nav";
     
     let div1 = document.createElement('div');
