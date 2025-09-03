@@ -35,10 +35,10 @@
   background-color: green;
 }
 
-/* 🔽 SOLO esto es lo nuevo */
 @media (max-width: 768px) {
   .item {
-    width: 18rem;   /* reducimos tamaño */
+    width: 18rem; 
     height: 35rem;
   }
 }
+                                                                                                                                                                                                                                                                          

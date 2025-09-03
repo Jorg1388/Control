@@ -1,6 +1,8 @@
-import { listaDeCompras } from "../../database/carrito.js";
 
-export function item(titulo,urlImg,description,price){
+import { guardarProducto, obtenerProductos } from "../../control/miLocalStorange.js";
+import { listaDeCompras } from "../../main.js";
+
+export function item(id,titulo,urlImg,description,price){
 
     let item = document.createElement('div');
     item.className = "item";
@@ -22,10 +24,14 @@ export function item(titulo,urlImg,description,price){
     item.appendChild(span);
 
     item.addEventListener('click', ()=>{
-        listaDeCompras.push("Comal");
-        console.log(listaDeCompras.length);
-        console.log(listaDeCompras);
-    });
+        let carritoLocalStorange = obtenerProductos();
+        console.log("carrito: ", carritoLocalStorange);
+        
+        carritoLocalStorange.push({id:id,precio:price,nombre:titulo, img:urlImg});
+        guardarProducto(carritoLocalStorange);
+        console.log("Producto en LocalStorange");
+        location.reload();
+});
 
     return item;
 }
